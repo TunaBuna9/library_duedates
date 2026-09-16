@@ -3,12 +3,12 @@
     <label>
         <p>
             Date Returned:
-            <input type="date" name="rdate" required>
+            <input type="date" name="rdate" >
         </p>
 
         <p>
             Due Date:
-            <input type="date" name="duedate" required>
+            <input type="date" name="duedate" >
         </p>
 
 

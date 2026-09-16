@@ -17,7 +17,6 @@ echo("_______");
 
 // Turns date into uni
 $returnUni= strtotime($dateReturned);
-
 $dueUni = strtotime($dueDate);
 
 echo($returnUni);
@@ -39,23 +38,26 @@ elseif ( $returnUni > $dueUni){
 }
 
 else{
-    $bookMessage= "Return Date:" . "x" ."/n" . "Due date: " . "xx";
+    $bookMessage= "Return Date: " . $dateReturned ;
+    $bookMessage2= "Due date: " . $dueDate;
 }
 
 echo($dueUni);
-echo $bookMessage;
+
 
 // $interval= $difference->date_diff($dateReturned, $dueDate);
 // echo(date_interval_format($difference, 'M-d-Y'));
 
-// WORKING CONVERT TESTSSSS
-$convertTest1 = date_create($dateReturned);
-$convertTest2 = date_create($dueDate);
+// WORKING CONVERT TESTSSSS - 
+if ($_GET){
+    $convertTest1 = date_create($dateReturned);
+    $convertTest2 = date_create($dueDate);
 
-$tuna= date_diff($convertTest1, $convertTest2);
-$format= '%m Months, %d Days, and %y Years';
+    $tuna= date_diff($convertTest1, $convertTest2);
+    $format= '%m Months, %d Days, and %y Years';
 
-echo(date_interval_format($tuna, $format));
+    echo(date_interval_format($tuna, $format));
+}
 
 
 

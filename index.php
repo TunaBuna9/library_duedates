@@ -11,12 +11,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Due Date checker</title>
 </head>
 <body>
-
     <?php 
         include("form.php");
+        if ($_GET){
+            echo $bookMessage;
+            echo "<br>";
+            echo $bookMessage2;
+        }
     ?>
     
 </body>
