@@ -65,15 +65,26 @@
                 </p>
             </div>
 
-            <div class="card-footer">
+            <div class="card-footer ">
                 <?php 
                     if ($_GET){
-                        echo $bookMessage;
-                        echo "<br>";
-                        echo $bookMessage2;
+                        echo ($bookMessage);
                     }
                 ?>
+
+                <div class="text-secondary">
+                <?php 
+                    if ($_GET){
+                        echo ($bookMessage2);
+                        echo "<br>";
+                        echo($bookMessage3);
+                    }
+                ?>
+                </div>
             </div>
+
+
+            
         </div>
 
     </main>

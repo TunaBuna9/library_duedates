@@ -8,6 +8,7 @@
       
     $bookMessage = '';
     $bookMessage2 = '';
+    $bookMessage3 = '';
 
     // Gets data from the from the array
     if ($_GET){
@@ -64,8 +65,11 @@
 
     // Catches anything else, simply printing the inputed dates, but should not run if everything is working properly as the if/else statements above should apply to all outcomes.
     else{
-        $bookMessage= "Return Date: " . $dateReturned ;
-        $bookMessage2= "Due date: " . $dueDate;
+        $bookMessage = "Please enter a valid date";
+        
     }
+
+    $bookMessage2= "Return Date: " .  date('F j, Y', $returnUni) ;
+    $bookMessage3= "Due date: " . date('F j, Y', $dueUni);
 
 ?>
