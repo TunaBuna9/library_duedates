@@ -1,0 +1,51 @@
+body {
+    background-color: #e7e8d9;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+
+/* #3c578cff */
+nav{
+   border-bottom: solid #00000082  3px ;
+}
+
+main{
+    margin: 2%;
+}
+
+#brand {
+    font-size: 1.6em;
+    font-weight: bold;
+    /* text-align: center; */
+}
+
+.card-header{
+    background-color: #3c578cff;
+    border-bottom: solid #000000  3px ;
+    color: white;
+    font-size: 1.3em;
+}
+
+.card {
+    margin: 4%;
+    box-shadow: 0 4px 8px 0 #00000033;
+    border: solid #000000  3px ;
+}
+
+.btn-color{
+    background-color: #3c578cff;
+    color:white;
+}
+
+.btn-color:hover{
+    background-color: #6c91dc; 
+}
+
+@media (min-width: 992px) {
+
+    .card {
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+   
+}
