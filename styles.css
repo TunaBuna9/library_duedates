@@ -1,27 +1,26 @@
+/* Nichole Blachford 2026 */
 body {
     background-color: #e7e8d9;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.2em;
 }
 
-/* #3c578cff */
-nav{
-   border-bottom: solid #00000082  3px ;
+nav {
+    border-bottom: solid #00000082 3px;
 }
 
-main{
+main {
     margin: 2%;
 }
 
 #brand {
     font-size: 1.6em;
     font-weight: bold;
-    /* text-align: center; */
 }
 
-.card-header{
+.card-header {
     background-color: #3c578cff;
-    border-bottom: solid #000000  3px ;
+    border-bottom: solid #000000 3px;
     color: white;
     font-size: 1.3em;
 }
@@ -29,16 +28,30 @@ main{
 .card {
     margin: 4%;
     box-shadow: 0 4px 8px 0 #00000033;
-    border: solid #000000  3px ;
+    border: solid #000000 3px;
 }
 
-.btn-color{
+.btn-color {
     background-color: #3c578cff;
-    color:white;
+    color: white;
 }
 
-.btn-color:hover{
-    background-color: #6c91dc; 
+.btn-color:hover {
+    background-color: #6c91dc;
+}
+
+.form-spacing {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 15px 25px;
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+label {
+    text-align: left;
+    min-width: 300px;
 }
 
 @media (min-width: 992px) {
@@ -47,5 +60,5 @@ main{
         margin-left: 12%;
         margin-right: 12%;
     }
-   
+
 }
